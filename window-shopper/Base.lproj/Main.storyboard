@@ -49,19 +49,51 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhZ-RA-N4d">
+                                <rect key="frame" x="40" y="298" width="295" height="71.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTb-BR-z5G">
+                                <rect key="frame" x="165" y="374.5" width="45" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVO-Mn-dUs">
+                                <rect key="frame" x="40" y="607" width="295" height="30"/>
+                                <state key="normal" title="Clear calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgQ-Ma-h4u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GhZ-RA-N4d" secondAttribute="trailing" constant="40" id="2vt-bd-cDR"/>
+                            <constraint firstItem="GhZ-RA-N4d" firstAttribute="width" secondItem="ypY-CE-D1m" secondAttribute="width" id="FI3-pe-FIo"/>
                             <constraint firstItem="ypY-CE-D1m" firstAttribute="top" secondItem="cEJ-Rg-rkh" secondAttribute="bottom" constant="50" id="IR1-3i-D5w"/>
                             <constraint firstItem="cEJ-Rg-rkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfP-je-zXf"/>
+                            <constraint firstItem="GhZ-RA-N4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Rhl-Yb-IsA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypY-CE-D1m" secondAttribute="trailing" constant="40" id="WO1-Gc-qMQ"/>
                             <constraint firstItem="cEJ-Rg-rkh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="XFi-Yr-7Uv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hVO-Mn-dUs" secondAttribute="trailing" constant="40" id="bjZ-kt-lFG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hVO-Mn-dUs" secondAttribute="bottom" constant="30" id="gLV-bm-M8J"/>
                             <constraint firstItem="ypY-CE-D1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jKt-dP-03d"/>
+                            <constraint firstItem="GhZ-RA-N4d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jpW-lQ-nhS"/>
+                            <constraint firstItem="hVO-Mn-dUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="lTe-aX-cWM"/>
+                            <constraint firstItem="HTb-BR-z5G" firstAttribute="top" secondItem="GhZ-RA-N4d" secondAttribute="bottom" constant="5" id="osL-NX-y0h"/>
+                            <constraint firstItem="HTb-BR-z5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yyP-cf-njQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="HTb-BR-z5G" id="G3P-FB-Cyv"/>
                         <outlet property="priceTxt" destination="lkQ-06-az2" id="nfc-EW-q3h"/>
+                        <outlet property="resultLbl" destination="GhZ-RA-N4d" id="uUN-yQ-0gG"/>
                         <outlet property="wageTxt" destination="MVb-E9-A3m" id="RxM-NF-4ki"/>
                     </connections>
                 </viewController>
