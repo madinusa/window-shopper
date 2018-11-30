@@ -9,8 +9,9 @@
 import UIKit
 
 class MainVC: UIViewController {
-    @IBOutlet weak var lönTxt: CurrencyTxtField!
-    @IBOutlet weak var prisTxt: CurrencyTxtField!
+    @IBOutlet weak var wageTxt: CurrencyTxtField!
+    @IBOutlet weak var priceTxt: CurrencyTxtField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,8 @@ class MainVC: UIViewController {
         calcBtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
         calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
         
-        lönTxt.inputAccessoryView = calcBtn
-        prisTxt.inputAccessoryView = calcBtn
+        wageTxt.inputAccessoryView = calcBtn
+        priceTxt.inputAccessoryView = calcBtn
         
     }
     @objc func calculate() {

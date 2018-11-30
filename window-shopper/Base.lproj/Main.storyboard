@@ -22,15 +22,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cEJ-Rg-rkh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cEJ-Rg-rkh">
                                 <rect key="frame" x="157.5" y="55" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="RAi-9V-wR8"/>
-                                    <constraint firstAttribute="height" constant="60" id="WrF-Gi-2q5"/>
+                                    <constraint firstAttribute="height" constant="60" id="Jt5-0Y-dhJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="uxf-jE-DX6"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-CE-D1m">
-                                <rect key="frame" x="40" y="162" width="295" height="97"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-CE-D1m">
+                                <rect key="frame" x="40" y="165" width="295" height="97"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Timlön" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVb-E9-A3m" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
@@ -52,15 +52,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ypY-CE-D1m" firstAttribute="top" secondItem="cEJ-Rg-rkh" secondAttribute="bottom" constant="50" id="8fh-xk-4fq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypY-CE-D1m" secondAttribute="trailing" constant="40" id="D4e-hm-pCA"/>
-                            <constraint firstItem="ypY-CE-D1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iTt-7a-q7O"/>
+                            <constraint firstItem="ypY-CE-D1m" firstAttribute="top" secondItem="cEJ-Rg-rkh" secondAttribute="bottom" constant="50" id="IR1-3i-D5w"/>
+                            <constraint firstItem="cEJ-Rg-rkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfP-je-zXf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypY-CE-D1m" secondAttribute="trailing" constant="40" id="WO1-Gc-qMQ"/>
+                            <constraint firstItem="cEJ-Rg-rkh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="XFi-Yr-7Uv"/>
+                            <constraint firstItem="ypY-CE-D1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jKt-dP-03d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="lönTxt" destination="MVb-E9-A3m" id="uHU-rb-Kxi"/>
-                        <outlet property="prisTxt" destination="lkQ-06-az2" id="XCZ-OS-eDK"/>
+                        <outlet property="priceTxt" destination="lkQ-06-az2" id="nfc-EW-q3h"/>
+                        <outlet property="wageTxt" destination="MVb-E9-A3m" id="RxM-NF-4ki"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
